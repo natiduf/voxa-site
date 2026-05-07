@@ -505,9 +505,11 @@ p,
 .carousel-btn.left {
   left: -10px;
 }
+
 .carousel-btn.right {
   right: -10px;
 }
+
 .carousel-btn:hover {
   transform: translateY(-50%) scale(1.1);
 }
@@ -775,7 +777,6 @@ p,
   z-index: 2;
 }
 
-
 /* ===== PROMOS SECTION ===== */
 .promo-section {
   width: 100%;
@@ -798,9 +799,13 @@ p,
 
 /* ===== CARDS ===== */
 .promo-card {
-  width: 20%;
+    width: calc(50% - 2px) !important;
+  flex: 0 0 calc(50% - 2px) !important;
+ margin: 0 auto;
+  min-width: calc(50% - 2px) !important;
+
   position: relative;
-  flex: 1;
+  
   min-height: 720px;
   overflow: hidden;
   border-radius: 40px;
@@ -919,8 +924,6 @@ p,
   font-weight: 700;
   line-height: 1.1;
 }
-
-/* ===== MOBILE ===== */
 
 /* ===== PROMO HEADER ===== */
 .promo-header {
@@ -1110,7 +1113,6 @@ p,
   opacity: 1;
 }
 
-
 /* ===== IMÁGENES CON MOVIMIENTO ===== */
 .parallax-art {
   position: absolute;
@@ -1226,13 +1228,16 @@ p,
   opacity: 1;
 }
 
-
 /* ===== MOBILE CLEAN FIX ===== */
 @media (max-width: 768px) {
   html,
   body {
-    width: 100%;    overflow-x: hidden;
+    width: 100%;
+    overflow-x: hidden;
   }
+
+
+
 
   .wrapper {
     width: 100%;
@@ -1477,53 +1482,95 @@ p,
     padding: 8px 12px;
   }
 
-  /* PROMOS */
+  /* PROMOS / NEWS: título arriba y cards 50% + 50% */
   .promo-section {
+    display: flex;
+    flex-direction: column !important;
+    align-items: stretch;
+    width: 100%;
     padding: 64px 16px;
+    gap: 18px;
   }
 
   .promo-header {
-    width: 100%;
-    padding: 0 0 32px;
+    width: 100% !important;
+    max-width: 100%;
+    padding: 0 0 8px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .promo-header .display {
-    font-size: clamp(28px, 8.5vw, 40px);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.05;
+    letter-spacing: -1.2px;
   }
 
- .promo-grid {
-  flex-direction: column !important;
+  .promo-header .body {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
 
-  width: 100%;
+  .promo-grid {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: stretch;
+     justify-content: center !important;
+  }
 
-  gap: 18px;
-
-  align-items: stretch;
-}
-
-
- .promo-card {
-  width: 100% !important;
-
-  min-height: auto;
-
-  padding: 42px 20px;
-}
+  .promo-card {
+    width: calc(50% - 7px) !important;
+    flex: 0 0 calc(50% - 7px) !important;
+    min-height: auto;
+    padding: 24px 14px;
+    border-radius: 24px;
+  }
 
   .promo-content {
-    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
   }
 
-  .promo-card .display,
-  .promo .display {
-    font-size: clamp(28px, 8.5vw, 40px);
-    line-height: 1.05;
+  .promo-card .display {
+    font-size: clamp(20px, 5vw, 28px);
+    line-height: 1.08;
+    letter-spacing: -1px;
   }
 
-  .promo-card .body,
-  .promo .body {
-    font-size: clamp(15px, 4vw, 18px);
-    line-height: 1.42;
+  .promo-card .body {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .promo-card .service-tags {
+    gap: 6px;
+  }
+
+  .promo-card .service-tags span {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .promo-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding: 12px 14px;
   }
 
   .promo-info,
