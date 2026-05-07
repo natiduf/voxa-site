@@ -1212,7 +1212,7 @@ p,
 @media (max-width: 768px) {
   html,
   body {
-    width: 100%;
+    width: 90%;
     overflow-x: hidden;
   }
 
@@ -1473,7 +1473,7 @@ p,
   }
 
   .promo-header {
-    width: 100% !important;
+    width: 80% !important;
     max-width: 100%;
     padding: 0 0 8px;
     margin: 0;
