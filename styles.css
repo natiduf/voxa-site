@@ -925,41 +925,9 @@ p,
   line-height: 1.1;
 }
 
-/* ===== PROMO HEADER ===== */
-.promo-header {
-  width: 100%;
-  max-width: 420px;
 
-  margin: 0 auto;
 
-  padding: 1rem;
 
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
-.promo-header .display {
-  width: 100%;
-  max-width: 420px;
-
-  margin: 10px auto 12px;
-
-  line-height: 1.05;
-}
-
-.promo-header .body {
-  width: 100%;
-  max-width: 340px;
-
-  margin: 0 auto;
-
-  line-height: 1.45;
-}
 
 .promo-kicker {
   font-size: var(--fs-body-sm);
@@ -986,10 +954,7 @@ p,
   overflow: hidden;
 }
 
-.promo-card {
-  border-radius: 40px;
-  overflow: hidden;
-}
+
 
 .top-nav {
   position: fixed;
