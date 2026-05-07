@@ -1473,10 +1473,10 @@ p,
   }
 
   .promo-header {
-    width: 90% !important;
-    max-width: 90%;
+    width: 100% !important;
+    max-width: 100%;
     padding: 0 0 8px;
-    margin: 1rem;
+    margin: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1484,17 +1484,17 @@ p,
   }
 
   .promo-header .display {
-    width: 90%;
-    max-width: 90%;
-    margin: 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     font-size: clamp(28px, 8vw, 40px);
     line-height: 1.05;
     letter-spacing: -1.2px;
   }
 
   .promo-header .body {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     margin-top: 12px;
     font-size: 16px;
     line-height: 1.45;
