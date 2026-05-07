@@ -1212,7 +1212,7 @@ p,
 @media (max-width: 768px) {
   html,
   body {
-    width: 90%;
+    width: 100%;
     overflow-x: hidden;
   }
 
@@ -1473,10 +1473,10 @@ p,
   }
 
   .promo-header {
-    width: 80% !important;
-    max-width: 100%;
+    width: 90% !important;
+    max-width: 90%;
     padding: 0 0 8px;
-    margin: 0;
+    margin: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1484,17 +1484,17 @@ p,
   }
 
   .promo-header .display {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
+    width: 90%;
+    max-width: 90%;
+    margin: 1rem;
     font-size: clamp(28px, 8vw, 40px);
     line-height: 1.05;
     letter-spacing: -1.2px;
   }
 
   .promo-header .body {
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
     margin-top: 12px;
     font-size: 16px;
     line-height: 1.45;
