@@ -1466,8 +1466,8 @@ p,
   .promo-section {
     display: flex;
     flex-direction: column !important;
-    align-items: stretch;
-    width: 100%;
+    align-items: center;
+    width: 90%;
     padding: 64px 16px;
     gap: 18px;
   }
